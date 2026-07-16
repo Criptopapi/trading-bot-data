@@ -25,8 +25,8 @@ import datetime
 import requests
 
 SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
-INTERVAL = "1h"
-MESES_A_DESCARGAR = 18  # ~1.5 anios de historia
+INTERVAL = "5m"
+MESES_A_DESCARGAR = 12  # 1 anio de historia a 5 minutos
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datos_binance")
 
 BASE_URL = "https://data.binance.vision/data/spot/monthly/klines"
